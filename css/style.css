@@ -1,20 +1,22 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 
 :root{
-    
+
     --background: #000000;
     --red: #C20000;
     --blue: #001F70;
-    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
-    
+    --gradient:linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+
     --font: 'Titillium Web', sans-serif;
+
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
 }
 
 body{
@@ -28,16 +30,17 @@ img{
 .header-top{
     width: 100%;
     height: 5em;
-    /* background-color: aliceblue; */
+    /*background-color: aliceblue;*/
 }
 .content{
     width: 100%;
     max-width: 75em;
     height: 100%;
-    /* background-color: aqua; */
-    margin: auto;
+    /*background-color: aqua;*/
+    margin:auto;
 }
 .flex-spbt-center{
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,37 +54,93 @@ img{
 }
 .menu ul{
     list-style-type: none;
-
 }
 .menu a{
-    color:#fff;
+    color: white;
     text-decoration: none;
     font-size: 1.5em;
     text-transform: uppercase;
     padding: 0.9em 0.66em;
 }
 .menu a:hover{
-    background-color: var(--red);
-    text-shadow: 0 0 20px #fff;
+    background-color: var(red);
+    text-shadow: 0 0 20px white;
     text-decoration: underline;
 }
 #menu-bars{
     display: none;
 }
+.banner{
+    position: relative;
+}
+.banner-container{
+    width: 100%;
+    height: 100%;
+   /* background-color: var(--blue);*/
+    position: absolute;
+    top: 0%;
+}
+.banner-content{
+    width: 80%;
+    height: 100%;
+   /* background-color: ;*/
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-text{
+    width: 50%;
+    height: 100%;
+   /* background-color: coral;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.banner-text h1{
+    font-size: 5.62em;
+}
+.banner-text p{
+    font-size: 1.87em;
+}
+.banner-text a{
+    color: white;
+    font-size: 1.87em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--red);
+    padding: 0.5em 1.2em;
+    border-radius: 0.75em;
+    margin-top: 2em;
+}
+.games{
+    width: 100%;
+    height: 7.5em;
+}
+.games ul{
+    width: 100%;
+    list-style-type: none;
+}
+.games img{
+    width: 170px;
+}
+.games ul a:hover img{
+    transition: 0.5;
+    transform: 1.5;
+}
 
-/* Até 1199px */
 @media screen and (max-width: 74.93em){
 
 }
-/* Até 991px */
-@media screen and (max-width: 61.93em){
-    
-}
-/* até 767px */
-@media screen and (max-width: 47.93em){
-   
-}
-/* Até 576px */
-@media screen and (max-width: 36em){
 
+@media screen and (max-width: 61.93em){
+
+}
+
+@media screen and (max-width: 47.93em){
+
+}
+
+@media screen and (max-width: 36em){
 }
