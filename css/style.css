@@ -1,22 +1,20 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 
 :root{
-
+    
     --background: #000000;
     --red: #C20000;
     --blue: #001F70;
-    --gradient:linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
-
+    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    
     --font: 'Titillium Web', sans-serif;
-
 }
 
 *{
-        margin: 0;
-        border: 0;
-        padding: 0;
-        box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -30,17 +28,16 @@ img{
 .header-top{
     width: 100%;
     height: 5em;
-    /*background-color: aliceblue;*/
+    /* background-color: aliceblue; */
 }
 .content{
     width: 100%;
     max-width: 75em;
     height: 100%;
-    /*background-color: aqua;*/
-    margin:auto;
+    /* background-color: aqua; */
+    margin: auto;
 }
 .flex-spbt-center{
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,17 +51,18 @@ img{
 }
 .menu ul{
     list-style-type: none;
+
 }
 .menu a{
-    color: white;
+    color:#fff;
     text-decoration: none;
     font-size: 1.5em;
     text-transform: uppercase;
     padding: 0.9em 0.66em;
 }
 .menu a:hover{
-    background-color: var(red);
-    text-shadow: 0 0 20px white;
+    background-color: var(--red);
+    text-shadow: 0 0 20px #fff;
     text-decoration: underline;
 }
 #menu-bars{
@@ -76,14 +74,14 @@ img{
 .banner-container{
     width: 100%;
     height: 100%;
-   /* background-color: var(--blue);*/
+    /* background-color: rgba(127, 255, 212, 0.39); */
     position: absolute;
-    top: 0%;
+    top: 0;
 }
 .banner-content{
     width: 80%;
     height: 100%;
-   /* background-color: ;*/
+    /* background-color: rgba(255, 235, 205, 0.384); */
     margin: auto;
     display: flex;
     justify-content: flex-end;
@@ -91,12 +89,12 @@ img{
 .banner-text{
     width: 50%;
     height: 100%;
-   /* background-color: coral;*/
+    /* background-color: coral; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color:#fff;
 }
 .banner-text h1{
     font-size: 5.62em;
@@ -105,7 +103,7 @@ img{
     font-size: 1.87em;
 }
 .banner-text a{
-    color: white;
+    color:#fff;
     font-size: 1.87em;
     text-decoration: none;
     text-transform: uppercase;
@@ -117,77 +115,177 @@ img{
 .games{
     width: 100%;
     height: 7.5em;
+    /* background-color: yellow; */
 }
 .games ul{
     width: 100%;
+    /* background-color: red; */
     list-style-type: none;
 }
 .games img{
     width: 170px;
+  
 }
 .games ul a:hover img{
-    transition: 0.5;
-    transform: 1.5;
+    transition: 0.5s;
+    transform:scale(1.5);
 }
-.about{
+
+.about {
     height: 31.25em;
     background-color: var(--blue);
 
     position: relative;
 }
-.about-angulation{
+
+.about-angulation {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
-
 }
-.angulation{
+
+.angulation {
     height: 24.125em;
     width: 100%;
     background-color: var(--background);
 
-    transform: skewY(-4deg);
-}
-.container-about{
-    color: white;
-    position: absolute;
-    top: 0;
+    transform: skewY(-4deg);   
 }
 
-.content-about{
+.container-about {
+    color: white;
+    position: absolute;
+    top: 0
+}
+
+.content-about {
     width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.text-about{
-    width: 50%;
-    text-align: justify;
-}
-.text-about h2{
-    margin-bottom: 1em;
-    font-size: 2.1875em;
-}
-.text-about p{
-    font-size: 1.25em;
-}
-.content-about img{
-    max-width: 31.875em;
-}
 
+.games-aovivo::after{
+    content:'';
+    border:solid 1px #fff;
+    height: 2em;
+    margin-left: 1em;
+}
+.games-aovivo, .games-embreve{
+    display: flex;
+    color:#fff;
+    align-items: center;
+    font-size: 1.875em;/*30px*/
+    justify-content: space-between;
+
+}
+.partida{
+    width: 9.5em;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    justify-content: space-between;
+    margin-left: 1em;
+}
+.time1, .time2{
+    display: flex;
+    align-items: center;
+}
+.partida img{
+    width: 1.8em;
+}
+.time1 img{
+    margin-left: 0.5em;
+}
+.time2 img{
+    margin-right: 0.5em;
+}
+ .noticia{
+ }
+.quadrado {
+
+width: 237px;
+height: 364px;
+left: 81px;
+top: 1492px;
+background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+box-shadow: 1px 1px 20px 4px #000000;
+}
+.container{
+    background-color: #1E1C21;
+    height: 1199px;
+    padding: 170px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    flex-direction: column;
+}
+.container img{
+   margin-top:4em;
+}
+.container h1{
+    align-items: flex-end;
+    width: 162px;
+    height: 30px;
+    left: 100px;
+    top: 1662px;
+
+    font-size: 19px;
+    line-height: 21px;
+
+    color: white;
+}
+.container p{
+    
+    width: 201px;
+    height: 120px;
+    left: 100px;
+    top: 1696px;
+
+    color: white;
+}
+.fim-page{
+/* Rectangle 10 */
+
+
+
+width: 1440px;
+height: 210px;
+left: 0px;
+top: 2295px;
+
+background: #010101;
+box-shadow: 0px 4px 4px 10px rgba(72, 66, 66, 0.25);
+/* Até 1199px */
+}
+.text-page{
+width: 206px;
+height: 59px;
+left: 588px;
+top: 2341px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 59px;
+color: #FFFFFF;
+
+}
 @media screen and (max-width: 74.93em){
 
 }
-
+/* Até 991px */
 @media screen and (max-width: 61.93em){
-
+    
 }
-
+/* até 767px */
 @media screen and (max-width: 47.93em){
-
+   
 }
-
+/* Até 576px */
 @media screen and (max-width: 36em){
+
 }
