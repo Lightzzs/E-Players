@@ -5,7 +5,7 @@
     --background: #000000;
     --red: #C20000;
     --blue: #001F70;
-    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
     
     --font: 'Titillium Web', sans-serif;
 }
@@ -202,90 +202,167 @@ img{
 .time2 img{
     margin-right: 0.5em;
 }
- .noticia{
- }
-.quadrado {
-
-width: 237px;
-height: 364px;
-left: 81px;
-top: 1492px;
-background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
-box-shadow: 1px 1px 20px 4px #000000;
+.bg-noticias{
+    width: 100%;
+    height: auto;
+    background-color: var(--black1);
 }
-.container{
-    background-color: #1E1C21;
-    height: 1199px;
-    padding: 170px;
+.noticias{
+    width: 73%;
+    height: 90%;
+    /* background-color: darkgray; */
+}
+.noticias h2, .proximos-jogos h2{
+    color: #fff;
+    margin: 0.5em 0;
+    font-size: 2.1875em;
+    text-transform: uppercase;
+}
+.proximos-jogos{
+    width: 25%;
+    height:auto;
+}
+.newscard{
+    width: 100%;
+    max-width: 15em;
+    height: 23.125em;
+    background: var(--gradient);
+    color: #fff;
+    margin-bottom: 1.5em;
+    box-shadow: 0px 0px 15px rgb(59, 59, 59);
+}
+.noticias h3{
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+.noticias p{
+    padding: 0em 0.7em;
+    /* text-align: justify; */
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.proximas-partidas{
+    background: var(--gradient);
+    height: 750px;
     display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
     flex-direction: column;
-}
-.container img{
-   margin-top:4em;
-}
-.container h1{
-    align-items: flex-end;
-    width: 162px;
-    height: 30px;
-    left: 100px;
-    top: 1662px;
+    justify-content: space-around;
+    align-items: center;
 
-    font-size: 19px;
-    line-height: 21px;
 
-    color: white;
 }
-.container p{
+.game{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+}
+.times{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.times div{
+    display: flex;
+    align-items: center;
+}
+.times p{
+    font-size: 1.25em;
+    font-family: 'Roboto';
+}
+.times > p{
+    margin: 0 1em;
+}
+.times img{
+    width: 2.5em;
+}.bg-news{
+    width: 100%;
+    height: auto;
+    background-color: var(--bgnews);
+}
+.news{
+    width: 70%;
+    height: 90%;
+    /* background-color: rgb(167, 167, 167); */
+}
+.news h2, .next-games h2{
+    color: #fff;
+    margin: 1em 0em;
+    font-size: 2.1875em;
+}
+.next-games{
+    width: 25%;
+    height: 90%;
+    /* background-color: rgb(167, 167, 167); */
     
-    width: 201px;
-    height: 120px;
-    left: 100px;
-    top: 1696px;
-
-    color: white;
 }
-.fim-page{
-/* Rectangle 10 */
-
-
-
-width: 1440px;
-height: 210px;
-left: 0px;
-top: 2295px;
-
-background: #010101;
-box-shadow: 0px 4px 4px 10px rgba(72, 66, 66, 0.25);
-/* Até 1199px */
+.content-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-.text-page{
-width: 206px;
-height: 59px;
-left: 588px;
-top: 2341px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 59px;
-color: #FFFFFF;
-
+.cardnews{
+    width: 15em;
+    height: 22.5em;
+    background: var(--gradient);
+    color: #fff;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 10px rgb(97, 97, 97),0px 0px 30px rgb(0, 0, 0);
+}
+.cardnews h3{
+    padding: 0.5em 0.6em;
+}
+.cardnews p{
+    padding: 0em 0.6em;
+}
+.next-games-bg{
+    width: 90%;
+    height: auto;
+    background: var(--gradient); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2.4em 0;
+}
+.next-games-match{
+    width: 100%;
+    height: 6.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+    font-weight: 700;
+    color: #fff;
+    
+}
+.teams{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.next-games-match div{
+    display: flex;
+    align-items: center;
+}
+.next-games-match img{
+    max-width: 2.5em;
+}
+.next-games-match > p{
+    margin-top: 1em;
 }
 @media screen and (max-width: 74.93em){
 
 }
-/* Até 991px */
 @media screen and (max-width: 61.93em){
     
 }
-/* até 767px */
 @media screen and (max-width: 47.93em){
    
 }
-/* Até 576px */
 @media screen and (max-width: 36em){
 
 }
